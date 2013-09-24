@@ -1,16 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Localhost]]></title>
   <link href="http://dpb1.github.io/atom.xml" rel="self"/>
   <link href="http://dpb1.github.io/"/>
-  <updated>2013-09-24T15:46:40-06:00</updated>
+  <updated>2013-09-24T16:39:07-06:00</updated>
   <id>http://dpb1.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[David Britton]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bashing Your Head In: Local is a Command]]></title>
+    <link href="http://dpb1.github.io/blog/2013/09/24/bashing-your-head-in-dangers-of-local-and-status/"/>
+    <updated>2013-09-24T16:01:00-06:00</updated>
+    <id>http://dpb1.github.io/blog/2013/09/24/bashing-your-head-in-dangers-of-local-and-status</id>
+    <content type="html"><![CDATA[<p><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell">Bash</a>) has a major
+conceptional drawback.  No, I&rsquo;m not talking about odd syntax, overuse of
+whitespace delimiters or even the slow performance.  Nearly everything in the
+language is a command.  Bash works really well for executing simple Unix
+commands, parsing the output, and acting on their return codes, but it
+sometimes returns confusing results when you fail to remember that it&rsquo;s own
+builtin commands use this same system for reporting output and results.</p>
+
+<p>For instance, this bit of code is a very clean way to parse a syslog file for
+all executions of the CRON subsystem on Ubuntu.  Quick and readable, runnable
+at the command line, and just makes sense:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">output</span><span class="o">=</span><span class="sb">`</span>cat /var/log/syslog | grep CRON | wc -l<span class="sb">`</span>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -eq 0 <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot;Found $output cron log line(s)&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot;No cron log lines found&quot;</span>
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Notice that I am capturing the output of that command into a variable named
+<code>output</code>.  Ideally, you would want that output variable to be local, since
+output is a common word, and you could be trampling on some other code in a
+sourced file, or even in your own file.  So, let&rsquo;s do this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">local </span><span class="nv">output</span><span class="o">=</span><span class="sb">`</span>cat /var/log/syslog | grep CRON | wc -l<span class="sb">`</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There!  All fixed.  Except, it&rsquo;s not.  You probably see the problem, the local
+builtin is actually a command whose status is evalutated after the execution of
+your log parsing.  Since <code>local output</code> will succeed in pretty much every case,
+the result of the last command (<code>$?</code>) will always evaluate to 0.</p>
+
+<p>The best practice is always to</p>
+
+<ol>
+<li> Use Local variables</li>
+<li> Declare local variables on their own line</li>
+</ol>
+
+
+<p>So our silly example becomes:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">local </span>output
+</span><span class='line'><span class="nv">output</span><span class="o">=</span><span class="sb">`</span>cat /var/log/syslog | grep CRON | wc -l<span class="sb">`</span>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -eq 0 <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot;Found $output cron log line(s)&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot;No cron log lines found&quot;</span>
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Happy Bashing!</p>
+]]></content>
+  </entry>
   
 </feed>
