@@ -6,7 +6,7 @@ comments: true
 categories: code
 ---
 
-[Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) has a major
+<a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> has a major
 conceptional drawback.  No, I'm not talking about odd syntax, overuse of
 whitespace delimiters or even the slow performance.  Nearly everything in the
 language is a command.  Bash works really well for executing simple Unix
@@ -14,9 +14,9 @@ commands, parsing the output, and acting on their return codes, but it
 sometimes returns confusing results when you fail to remember that it's own
 builtin commands use this same system for reporting output and results.
 
-For instance, this bit of code is a very clean way to parse a syslog file for
-all executions of the CRON subsystem on Ubuntu.  Quick and readable, runnable
-at the command line, and just makes sense:
+For instance, this bit of code is a clean (even if contrived) way to parse a
+syslog file for all executions of the CRON subsystem on Ubuntu.  Quick and
+readable, runnable at the command line, and just makes sense:
 
 ``` bash
 output=`cat /var/log/syslog | grep CRON | wc -l`
