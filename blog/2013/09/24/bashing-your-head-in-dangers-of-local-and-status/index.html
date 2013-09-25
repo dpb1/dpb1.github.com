@@ -145,7 +145,7 @@ sourced file, or even in your own file.  So, let&rsquo;s do this:</p>
 
 
 <p>There!  All fixed.  Except, it&rsquo;s not.  You probably see the problem, the local
-builtin is actually a command whose status is evalutated after the execution of
+builtin is actually a command whose status is evaluated after the execution of
 your log parsing.  Since <code>local output</code> will succeed in pretty much every case,
 the result of the last command (<code>$?</code>) will always evaluate to 0.</p>
 
