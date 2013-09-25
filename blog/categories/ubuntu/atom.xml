@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ubuntu | Localhost]]></title>
   <link href="http://dpb1.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://dpb1.github.io/"/>
-  <updated>2013-09-25T15:19:42-06:00</updated>
+  <updated>2013-09-25T15:43:19-06:00</updated>
   <id>http://dpb1.github.io/</id>
   <author>
     <name><![CDATA[David Britton]]></name>
@@ -25,9 +25,11 @@
 <p>I like this room.  But well, It&rsquo;s just not for me.  Instead I like playing old
 games with emulators, like <a href="http://www.zsnes.com/">zsnes</a> (Super
 Nintendo) or <a href="http://mamedev.org">MAME</a> (Arcade) or even <a
-href="http://www.dolphin-emulator.com/">dolphin</a> (Gamecube).</p>
+href="http://www.dolphin-emulator.com/">dolphin</a> (Gamecube).  And when
+playing emulated games, I recommend Ubuntu, even if other operating systems
+have a marketshare edge (for now).</p>
 
-<p>Honestly, Ubuntu has been a first class citizen with many emulators
+<p>Ubuntu has been a first class citizen with many emulators
 for some time now.  I think the idea of a free operating system running
 mutliple console platforms on commodity hardware just has a certain
 nerd-charm, so the platform has recieved a lot of attention from emulator
