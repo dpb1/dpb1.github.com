@@ -1,0 +1,8 @@
+#!/bin/bash
+
+msg="site updates"
+if [ "$1" != "" ]; then
+    msg=$1
+fi
+    
+rake generate && rake deploy && git commit -a -m "$msg" && git push origin source
