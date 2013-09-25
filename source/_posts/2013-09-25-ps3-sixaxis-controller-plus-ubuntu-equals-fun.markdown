@@ -13,7 +13,7 @@ The Problem
 -----------
 
 
-{% img center images/game-room.jpg Overboard %}
+{% img center /images/game-room.jpg Overboard %}
 
 I like this room.  But well, It's just not for me.  Instead I like playing old
 games with emulators, like <a href="http://www.zsnes.com/">zsnes</a> (Super
