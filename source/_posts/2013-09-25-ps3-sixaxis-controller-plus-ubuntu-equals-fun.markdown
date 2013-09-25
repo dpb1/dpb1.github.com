@@ -3,7 +3,6 @@ layout: post
 title: "ps3 sixaxis controller + ubuntu = fun"
 date: 2013-09-25 13:50
 comments: true
-published: false
 categories:
   - hardware
   - ubuntu
