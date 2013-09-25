@@ -18,9 +18,11 @@ The Problem
 I like this room.  But well, It's just not for me.  Instead I like playing old
 games with emulators, like <a href="http://www.zsnes.com/">zsnes</a> (Super
 Nintendo) or <a href="http://mamedev.org">MAME</a> (Arcade) or even <a
-href="http://www.dolphin-emulator.com/">dolphin</a> (Gamecube).
+href="http://www.dolphin-emulator.com/">dolphin</a> (Gamecube).  And when
+playing emulated games, I recommend Ubuntu, even if other operating systems
+have a marketshare edge (for now).
 
-Honestly, Ubuntu has been a first class citizen with many emulators
+Ubuntu has been a first class citizen with many emulators
 for some time now.  I think the idea of a free operating system running
 mutliple console platforms on commodity hardware just has a certain
 nerd-charm, so the platform has recieved a lot of attention from emulator
