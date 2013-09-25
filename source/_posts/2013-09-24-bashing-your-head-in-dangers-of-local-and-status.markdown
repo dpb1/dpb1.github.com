@@ -38,7 +38,7 @@ local output=`cat /var/log/syslog | grep CRON | wc -l`
 ```
 
 There!  All fixed.  Except, it's not.  You probably see the problem, the local
-builtin is actually a command whose status is evalutated after the execution of
+builtin is actually a command whose status is evaluated after the execution of
 your log parsing.  Since `local output` will succeed in pretty much every case,
 the result of the last command (`$?`) will always evaluate to 0.
 
