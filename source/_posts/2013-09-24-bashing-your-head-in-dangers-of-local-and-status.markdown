@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Bashing Your Head In: Local is a Command"
-date: 2013-09-24 16:01
-comments: true
+comments: false
 categories: code
 ---
 
