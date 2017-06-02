@@ -4,7 +4,7 @@
   <title><![CDATA[Category: code | Localhost]]></title>
   <link href="http://dpb1.github.io/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://dpb1.github.io/"/>
-  <updated>2013-09-25T15:56:07-06:00</updated>
+  <updated>2017-06-02T11:38:54-06:00</updated>
   <id>http://dpb1.github.io/</id>
   <author>
     <name><![CDATA[David Britton]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Bashing Your Head In: Local is a Command]]></title>
     <link href="http://dpb1.github.io/blog/2013/09/24/bashing-your-head-in-dangers-of-local-and-status/"/>
-    <updated>2013-09-24T16:01:00-06:00</updated>
+    <updated>2013-09-24T00:00:00-06:00</updated>
     <id>http://dpb1.github.io/blog/2013/09/24/bashing-your-head-in-dangers-of-local-and-status</id>
     <content type="html"><![CDATA[<p><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> has a major
 conceptional drawback.  No, I&rsquo;m not talking about odd syntax, overuse of

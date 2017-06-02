@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: hardware - Localhost</title>
+  <title>Ubuntu Server Development Summary - 02 Jun 2017 - Localhost</title>
   <meta name="author" content="David Britton">
 
   
-  <meta name="description" content="Category: hardware">
+  <meta name="description" content="The purpose of this weekly summary is to make sure our community can
+follow development with toes dipped in before &amp; between jumping headlong &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://dpb1.github.ioblog/categories/hardware">
+  <link rel="canonical" href="http://dpb1.github.io/blog/2017/06/02/ubuntu-server-development-summary-02-jun-2017">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Localhost" type="application/atom+xml">
@@ -76,35 +77,156 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Hardware</h1>
+    
+      <h1 class="entry-title">Ubuntu Server Development Summary - 02 Jun 2017</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-06-02T11:13:00-06:00" pubdate data-updated="true">Jun 2<span>nd</span>, 2017</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>The purpose of this weekly summary is to make sure our community can
+follow development with toes dipped in before &amp; between jumping headlong
+into helping shape Ubuntu Server.</p>
 
-  
-  <h2>2013</h2>
+<h2>Ubuntu Server Packages</h2>
 
-<article>
-  
-<h1><a href="/blog/2013/09/25/ps3-sixaxis-controller-plus-ubuntu-equals-fun/">ps3 sixaxis controller + ubuntu = fun</a></h1>
-<time datetime="2013-09-25T00:00:00-06:00" pubdate><span class='month'>Sep</span> <span class='day'>25</span> <span class='year'>2013</span></time>
+<ul>
+<li>Uploads/Changes:
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/games/'>games</a>, <a class='category' href='/blog/categories/hardware/'>hardware</a>, <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a></span>
-</footer>
+<ul>
+<li>11 packages uploaded to Artful</li>
+<li>48 packages uploaded to Stable Releases</li>
+<li><a href="http://bit.ly/2rsZJce">Full List</a></li>
+<li><a href="https://merges.ubuntu.com/main.html">Future</a></li>
+</ul>
+</li>
+</ul>
 
 
-</article>
+<h2>Cloud-init/Curtin</h2>
+
+<ul>
+<li>cloud-init:
+
+<ul>
+<li>Enabled Aliyun datasource (LP:#1638931).   After SRU, Ubuntu
+images will work on Alibaba Cloud.</li>
+<li>Accepted merge to add schema definition and validation to NTP
+module</li>
+<li>Accepted merge to handle multi-line bridge parameters to E/N/I</li>
+<li>Accepted merge to discontinue writing systemd link files</li>
+<li>Fixed LP:#1693939 Azure chassis asset tag value</li>
+<li>Fixed LP:#1692093 to prevent re-executing disk setup on reboot</li>
+</ul>
+</li>
+<li>curtin:
+
+<ul>
+<li>Fixed package build issue after escaping udevadm command</li>
+<li>All integration VM tests back to green status</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Triage Queue</h2>
+
+<ul>
+<li>63 bugs reviewed, 1 accepted, 445 in backlog</li>
+<li><a href="https://bugs.launchpad.net/~ubuntu-server/+subscribedbugs">Backlog</a></li>
+<li><a href="https://wiki.ubuntu.com/ServerTeam/KnowledgeBase#Bug_Triage">Notes on daily bug triage</a></li>
+</ul>
+
+
+<h2>IRC Meeting</h2>
+
+<ul>
+<li><a href="http://bit.ly/2smBqg0">Log</a></li>
+<li><a href="https://wiki.ubuntu.com/ServerTeam/Meeting">General Info</a></li>
+</ul>
+
+
+<h2>Server ISOs</h2>
+
+<ul>
+<li>Publishing of new daily Artful server ISOs is currently blocked by
+LP:#1694531</li>
+</ul>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">David Britton</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-06-02T11:13:00-06:00" pubdate data-updated="true">Jun 2<span>nd</span>, 2017</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://dpb1.github.io/blog/2017/06/02/ubuntu-server-development-summary-02-jun-2017/" data-via="davidpbritton" data-counturl="http://dpb1.github.io/blog/2017/06/02/ubuntu-server-development-summary-02-jun-2017/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="small"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/09/25/ps3-sixaxis-controller-plus-ubuntu-equals-fun/" title="Previous Post: ps3 sixaxis controller + ubuntu = fun">&laquo; ps3 sixaxis controller + ubuntu = fun</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
@@ -185,19 +307,6 @@
 
 </footer>
   
-
-<script type="text/javascript">
-      var disqus_shortname = 'dpb1';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 

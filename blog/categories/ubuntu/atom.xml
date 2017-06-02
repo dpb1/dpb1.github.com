@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ubuntu | Localhost]]></title>
   <link href="http://dpb1.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://dpb1.github.io/"/>
-  <updated>2013-09-25T15:56:07-06:00</updated>
+  <updated>2017-06-02T11:38:54-06:00</updated>
   <id>http://dpb1.github.io/</id>
   <author>
     <name><![CDATA[David Britton]]></name>
@@ -14,9 +14,86 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Ubuntu Server Development Summary - 02 Jun 2017]]></title>
+    <link href="http://dpb1.github.io/blog/2017/06/02/ubuntu-server-development-summary-02-jun-2017/"/>
+    <updated>2017-06-02T11:13:00-06:00</updated>
+    <id>http://dpb1.github.io/blog/2017/06/02/ubuntu-server-development-summary-02-jun-2017</id>
+    <content type="html"><![CDATA[<p>The purpose of this weekly summary is to make sure our community can
+follow development with toes dipped in before &amp; between jumping headlong
+into helping shape Ubuntu Server.</p>
+
+<h2>Ubuntu Server Packages</h2>
+
+<ul>
+<li>Uploads/Changes:
+
+<ul>
+<li>11 packages uploaded to Artful</li>
+<li>48 packages uploaded to Stable Releases</li>
+<li><a href="http://bit.ly/2rsZJce">Full List</a></li>
+<li><a href="https://merges.ubuntu.com/main.html">Future</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Cloud-init/Curtin</h2>
+
+<ul>
+<li>cloud-init:
+
+<ul>
+<li>Enabled Aliyun datasource (LP:#1638931).   After SRU, Ubuntu
+images will work on Alibaba Cloud.</li>
+<li>Accepted merge to add schema definition and validation to NTP
+module</li>
+<li>Accepted merge to handle multi-line bridge parameters to E/N/I</li>
+<li>Accepted merge to discontinue writing systemd link files</li>
+<li>Fixed LP:#1693939 Azure chassis asset tag value</li>
+<li>Fixed LP:#1692093 to prevent re-executing disk setup on reboot</li>
+</ul>
+</li>
+<li>curtin:
+
+<ul>
+<li>Fixed package build issue after escaping udevadm command</li>
+<li>All integration VM tests back to green status</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Triage Queue</h2>
+
+<ul>
+<li>63 bugs reviewed, 1 accepted, 445 in backlog</li>
+<li><a href="https://bugs.launchpad.net/~ubuntu-server/+subscribedbugs">Backlog</a></li>
+<li><a href="https://wiki.ubuntu.com/ServerTeam/KnowledgeBase#Bug_Triage">Notes on daily bug triage</a></li>
+</ul>
+
+
+<h2>IRC Meeting</h2>
+
+<ul>
+<li><a href="http://bit.ly/2smBqg0">Log</a></li>
+<li><a href="https://wiki.ubuntu.com/ServerTeam/Meeting">General Info</a></li>
+</ul>
+
+
+<h2>Server ISOs</h2>
+
+<ul>
+<li>Publishing of new daily Artful server ISOs is currently blocked by
+LP:#1694531</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[ps3 sixaxis controller + ubuntu = fun]]></title>
     <link href="http://dpb1.github.io/blog/2013/09/25/ps3-sixaxis-controller-plus-ubuntu-equals-fun/"/>
-    <updated>2013-09-25T13:50:00-06:00</updated>
+    <updated>2013-09-25T00:00:00-06:00</updated>
     <id>http://dpb1.github.io/blog/2013/09/25/ps3-sixaxis-controller-plus-ubuntu-equals-fun</id>
     <content type="html"><![CDATA[<h2>The Problem</h2>
 
