@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>
+            http://dpb1.github.io/blog/2013/09/24/bashing-your-head-in-dangers-of-local-and-status/
+        </loc>
+        <lastmod>2017-06-02T11:38:47-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://dpb1.github.io/blog/2013/09/25/ps3-sixaxis-controller-plus-ubuntu-equals-fun/
+        </loc>
+        <lastmod>2017-06-02T11:38:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://dpb1.github.io/blog/2017/06/02/ubuntu-server-development-summary-02-jun-2017/
+        </loc>
+        <lastmod>2017-06-02T11:38:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://dpb1.github.io/</loc>
+        <lastmod>2017-06-02T11:38:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://dpb1.github.io/robots.txt</loc>
+        <lastmod>2013-09-24T15:46:26-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://dpb1.github.io/blog/archives/</loc>
+        <lastmod>2017-06-02T11:38:50-06:00</lastmod>
+    </url>
+</urlset>
