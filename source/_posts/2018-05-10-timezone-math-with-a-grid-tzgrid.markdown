@@ -8,17 +8,18 @@ categories:
   - ubuntu
 ---
 
+{% img center /images/tzgrid-icon.png Icon! %}
 
 I love my [current job][1] as an engineering manager at [Canonical][2].
 It's been a blessing to our family that I can work from my house.  I get
 to do just enough traveling to places I likely would have never gone on
-my own.  And I get to work on a product that I love ([Ubuntu Server][3])
-with people I love that are just some of the brightest, friendliest and
-fun people in the industry.
+my own to scratch my travel itch.  *And* I get to work on a product that
+I love ([Ubuntu Server][3]) with people I love that are just some of the
+brightest, friendliest and fun people in the industry.
 
-My team at Canonical speaks 5 different languages natively and spans 6
-"standard" timezones.  It's such a cool experience to work with people
-from many different cultural backgrounds.
+My wonderful team at Canonical speaks 5 different languages natively and
+spans 6 "standard" timezones.  It's such a cool experience to work with
+people from many different cultural backgrounds.
 
 As the person who has the pleasure of managing this team, one of my
 responsibilities is knowing when we can schedule things like standups or
@@ -28,7 +29,7 @@ team meetings where everyone can attend.
 Simple, just memorize these timezones.
 -----------
 
-{% img center /images/timezone-map.png Timezones! %}
+{% img center /images/timezone_map.png Timezones! %}
 
 Back to those 6 standard timezones, those are more richly referred to by
 their [IANA tz database zone][5] names, which carry historical
@@ -47,8 +48,9 @@ definitions.  My team's time zones:
 Basically, if you can map where the person lives to their IANA zone
 name, you know what "time" people that live in that area think it is
 **now**, or even at some point in the past 100 years or so (timezones
-weren't really formalized until trains let us travel across distances so
-quickly, and on schedules, that it mattered to know).
+weren't really put into widespread use until trains let us travel across
+distances so quickly, and on schedules, that it mattered to know; before
+that people just went by the local solar time in their city).
 
 So what's the problem?  Maybe you don't have this problem, but for me,
 timezone math is hard.  It's simple addition and subtraction, why should
@@ -75,8 +77,6 @@ worked from the command line as that is where I spend a lot of my day.
 
 Introducing tzgrid
 -----------
-
-{% img center /images/tzgrid.png tzgrid! %}
 
 Do you know what `cal` is?  It looks like this:
 
@@ -106,10 +106,15 @@ It has a few neat features:
  * DST offsets are calculated correctly
  * Workday hours highlighting helps to know when to schedule a meeting.
 
-And the usage of it is very simple, I can set up a config file to show
-all my team's timezones with `tzgrid`, or if I have a meeting to arrange
-with someone in Seattle and in Wellington (NZ), and I can type `tzgrid
-Denver Wellington Seattle` and see my 3 timezones displayed right there.
+And the usage of it is very simple:
+
+```
+# set up a config file and show all my team's timezones
+tzgrid
+
+# See times in Denver, Seattle and Wellington (New Zealand)
+tzgrid Denver Wellington Seattle
+```
 
 Wow, I'm sold, where do I send money?
 -------
