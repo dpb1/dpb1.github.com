@@ -5,4 +5,3 @@
 layout: home
 ---
 
-{% assign post = site.posts.first %}
